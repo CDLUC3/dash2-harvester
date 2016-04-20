@@ -15,6 +15,7 @@ GIT
       stash-wrapper (~> 0.1, >= 0.1.1)
 
 GEM
+  remote: https://rubygems.org/
   specs:
     actionpack (4.2.5.2)
       actionview (= 4.2.5.2)
