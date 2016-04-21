@@ -52,6 +52,7 @@ GEM
     capistrano-bundler (1.1.4)
       capistrano (~> 3.1)
       sshkit (~> 1.2)
+    chronic (0.10.2)
     config-factory (0.0.8)
     datacite-mapping (0.1.9)
       typesafe_enum (~> 0.1, >= 0.1.5)
@@ -126,6 +127,8 @@ GEM
     typesafe_enum (0.1.6)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    whenever (0.9.4)
+      chronic (>= 0.6.3)
     xml-mapping (0.10.0)
     xml-mapping_extensions (0.3.4)
       mime-types (~> 2.5)
@@ -139,6 +142,7 @@ DEPENDENCIES
   capistrano (~> 3.4)
   capistrano-bundler (~> 1.1.4)
   stash-harvester!
+  whenever (~> 0.9)
 
 BUNDLED WITH
    1.11.2
