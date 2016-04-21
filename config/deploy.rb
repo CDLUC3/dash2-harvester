@@ -12,7 +12,8 @@ set :deploy_to, '/apps/dash2/apps/dash2-harvester'
 # set :default_env, { path: "/apps/dash2/apps/dash2-harvester/bin:$PATH" }
 
 # Scheduling support, see https://github.com/javan/whenever
-set :whenever_environment, -> { fetch :stash_env, fetch(:stage, 'production') }
+set :whenever_identifier, -> { "#{fetch(:application)}_#{fetch(:stage)}" }
+set :whenever_environment, -> { fetch(:stage, 'production') }
 
 namespace :deploy do
 
