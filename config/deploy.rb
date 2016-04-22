@@ -15,7 +15,7 @@ set :linked_dirs, fetch(:linked_dirs, []).push('log', 'db')
 
 # Scheduling support, see https://github.com/javan/whenever
 set :whenever_identifier, -> { "#{fetch(:application)}_#{fetch(:stage)}" }
-set :whenever_environment, -> { fetch(:stage, 'development') }
+set :whenever_environment, -> { fetch(:stage, 'development') } # TODO: figure out why this doesn't work in schedule.rb
 
 namespace :deploy do
 
