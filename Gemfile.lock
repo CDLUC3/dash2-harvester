@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/CDLUC3/stash-harvester
-  revision: 1dec87559dabef0fc6a656488d099fdefa3babc5
+  revision: 3606e44275039af94d539d3c67d1f3af265fd6c3
   specs:
     stash-harvester (0.0.1)
       activerecord (~> 4.2, >= 4.2.3)
@@ -112,7 +112,7 @@ GEM
       builder (>= 2.1.2)
     rubyzip (1.2.0)
     sqlite3 (1.3.11)
-    sshkit (1.9.0)
+    sshkit (1.10.0)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
     standalone_migrations (4.0.2)
