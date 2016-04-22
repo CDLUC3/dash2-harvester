@@ -10,5 +10,8 @@ require 'capistrano/bundler'
 # Scheduling support, see https://github.com/javan/whenever
 require 'whenever/capistrano'
 
+# STASH_ENV
+set :stash_env, fetch(:stage, 'development')
+
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
 Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }
