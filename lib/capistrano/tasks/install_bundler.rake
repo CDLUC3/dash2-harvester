@@ -5,7 +5,7 @@ namespace :install do
       if test('which bundle')
         info "Bundler is already installed on #{host}"
       else
-        execute 'sh -c "gem install bundler"'
+        execute 'gem install bundler'
       end
     end
   end
