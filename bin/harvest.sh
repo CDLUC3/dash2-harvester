@@ -3,11 +3,11 @@
 # TODO: Figure out how to set this with Capistrano
 # export STASH_ENV=development
 
-cd /apps/dash2/apps/dash2-harvester/
+APP_DIR=$(realpath `dirname $0`/..)
+cd $APP_DIR
 
-CONFIG_FILE=config/stash-harvester.yml
-LOG_FILE=logs/stash-harvester.log
+CONFIG_FILE=${APP_DIR}/config/stash-harvester.yml
 
-stash-harvester -c ${CONFIG_FILE} >> LOG_FILE
+stash-harvester -c ${CONFIG_FILE}
 
 
