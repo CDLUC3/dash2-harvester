@@ -15,7 +15,7 @@ set :linked_dirs, fetch(:linked_dirs, []).push('log', 'db')
 
 # Scheduling support, see https://github.com/javan/whenever
 set :whenever_identifier, -> { "#{fetch(:application)}_#{fetch(:stage)}" }
-set :whenever_environment, -> { fetch(:stage, 'production') }
+set :whenever_environment, -> { fetch(:stage, 'development') }
 
 namespace :deploy do
 
