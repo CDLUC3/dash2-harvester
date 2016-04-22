@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/CDLUC3/stash-harvester
-  revision: 2bbf7b0cc3b251f94f36948dd939631caa9fb8d0
+  revision: 1dec87559dabef0fc6a656488d099fdefa3babc5
   specs:
     stash-harvester (0.0.1)
       activerecord (~> 4.2, >= 4.2.3)
