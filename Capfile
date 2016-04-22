@@ -7,9 +7,6 @@ require 'capistrano/deploy'
 # Bundler support, see https://github.com/capistrano/bundler
 require 'capistrano/bundler'
 
-# Scheduling support, see https://github.com/javan/whenever
-require 'whenever/capistrano'
-
 # STASH_ENV
 set :stash_env, fetch(:stage, 'development')
 
