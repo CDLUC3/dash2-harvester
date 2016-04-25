@@ -1,5 +1,5 @@
-namespace :install do
-  desc 'Install/update bundler'
+namespace :prepare do
+  desc 'Install bundler, if not already installed'
   task :bundler do
     on roles(:all) do |host|
       if test('which bundle')
