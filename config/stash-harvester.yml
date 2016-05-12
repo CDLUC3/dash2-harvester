@@ -15,7 +15,6 @@ test:
     protocol: OAI
     oai_base_url: http://uc3-mrtoai-dev.cdlib.org:37001/mrtoai/oai/v2
     metadata_prefix: stash_wrapper
-    set: dash_cdl
     seconds_granularity: true
   db:
     adapter: sqlite3
@@ -36,7 +35,6 @@ development:
     protocol: OAI
     oai_base_url: http://uc3-mrtoai-dev.cdlib.org:37001/mrtoai/oai/v2
     metadata_prefix: stash_wrapper
-    set: dash_cdl
     seconds_granularity: true
   db:
     adapter: sqlite3
@@ -56,7 +54,6 @@ stage:
     protocol: OAI
     oai_base_url: http://uc3-mrtoai-stg.cdlib.org:37001/mrtoai/oai/v2
     metadata_prefix: stash_wrapper
-    set: dash_cdl
     seconds_granularity: true
   db:
     adapter: sqlite3
@@ -76,7 +73,6 @@ production:
     protocol: OAI
     oai_base_url: http://uc3-mrtoai-prd.cdlib.org:37001/mrtoai/oai/v2
     metadata_prefix: stash_wrapper
-    set: dash_cdl
     seconds_granularity: true
   db:
     adapter: sqlite3
