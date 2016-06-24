@@ -6,4 +6,5 @@ group :development do
 end
 
 gem 'whenever', '~> 0.9'
+gem 'nokogiri', '1.6.7.2'
 gem 'stash-harvester', git: 'https://github.com/CDLUC3/stash-harvester'
