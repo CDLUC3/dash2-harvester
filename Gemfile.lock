@@ -1,11 +1,11 @@
 GIT
   remote: https://github.com/CDLUC3/stash-harvester
-  revision: c99868208b467ceb8db102bba1b28ab8e3695702
+  revision: 057121bb4cd1beea01a00e053ae245fb13f786a7
   specs:
     stash-harvester (0.0.1)
       activerecord (~> 4.2, >= 4.2.3)
       config-factory (~> 0.0, >= 0.0.8)
-      datacite-mapping (~> 0.2, >= 0.2.2)
+      datacite-mapping (~> 0.2, >= 0.2.3)
       factory_girl (~> 4.0)
       oai (~> 0.3, >= 0.3.1)
       resync-client (~> 0.4, >= 0.4.5)
@@ -59,7 +59,7 @@ GEM
     capistrano-harrow (0.5.3)
     chronic (0.10.2)
     config-factory (0.0.9)
-    datacite-mapping (0.2.2)
+    datacite-mapping (0.2.3)
       typesafe_enum (~> 0.1, >= 0.1.7)
       xml-mapping_extensions (~> 0.4, >= 0.4.7)
     erubis (2.7.0)
