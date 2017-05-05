@@ -21,7 +21,7 @@ test:
     database: ':memory:'
     pool: 5
     timeout: 5000
-  update_uri: https://localhost:3000/stash/datasets
+  update_uri: https://localhost:3000/stash/dataset
 
 development:
   <<: *defaults
@@ -41,7 +41,7 @@ development:
     adapter: sqlite3
     database: db/development.sqlite3
     pool: 5
-  update_uri: https://dash2-dev.ucop.edu/stash/datasets
+  update_uri: https://dash2-dev.ucop.edu/stash/dataset
 
 stage:
   <<: *defaults
@@ -61,7 +61,7 @@ stage:
     adapter: sqlite3
     database: db/stage.sqlite3
     pool: 5
-  update_uri: https://dash-stg.ucop.edu/stash/datasets
+  update_uri: https://dash-stg.ucop.edu/stash/dataset
 
 production:
   <<: *defaults
@@ -81,5 +81,5 @@ production:
     adapter: sqlite3
     database: db/production.sqlite3
     pool: 5
-  update_uri: https://dash.ucop.edu/stash/datasets
+  update_uri: https://dash.ucop.edu/stash/dataset
 
