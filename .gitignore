@@ -29,6 +29,7 @@ db/*.sqlite3
 *.iws
 *.ids
 .rakeTasks
+.idea
 
 # Emacs
 
