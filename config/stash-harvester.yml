@@ -63,6 +63,27 @@ stage:
     pool: 5
   update_uri: https://dash-stg.ucop.edu/stash/dataset
 
+demo:
+  <<: *defaults
+  index:
+    adapter: Solr
+    url: http://uc3-dashdemo-stg.cdlib.org:8983/solr/geoblacklight
+    open_timeout: 120          # connection open timeout in seconds
+    read_timeout: 300          # read timeout in seconds
+    retry_503: 3               # max retries
+    retry_after_limit: 20      # retry wait time in seconds
+  source:
+    protocol: OAI
+    # TODO: will this work correctly or will we get stage results
+    oai_base_url: http://uc3-mrtoai-stg.cdlib.org:37001/mrtoai/oai/v2
+    metadata_prefix: stash_wrapper
+    seconds_granularity: true
+  db:
+    adapter: sqlite3
+    database: db/demo.sqlite3
+    pool: 5
+  update_uri: https://dashdemo.ucop.edu/stash/dataset
+
 production:
   <<: *defaults
   index:
