@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/CDLUC3/stash.git
-  revision: 3a8698e81e3852773f095d66b654935ca7742af5
+  revision: ed6f7b04322159590bf1692149acb8b9536dc6eb
   ref: development
   specs:
     stash-harvester (0.0.2)
