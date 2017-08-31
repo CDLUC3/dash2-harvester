@@ -32,14 +32,14 @@ development:
     read_timeout: 300          # read timeout in seconds
     retry_503: 3               # max retries
     retry_after_limit: 20      # retry wait time in seconds
-    sets:
-      - dash_ucb
-      - dash_ucla
   source:
     protocol: OAI
     oai_base_url: http://uc3-mrtoai-dev.cdlib.org:37001/mrtoai/oai/v2
     metadata_prefix: stash_wrapper
     seconds_granularity: true
+    sets:
+      - dash_ucb
+      - dash_ucla
   db:
     adapter: sqlite3
     database: db/development.sqlite3
