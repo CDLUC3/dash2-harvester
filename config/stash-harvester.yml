@@ -32,6 +32,9 @@ development:
     read_timeout: 300          # read timeout in seconds
     retry_503: 3               # max retries
     retry_after_limit: 20      # retry wait time in seconds
+    sets:
+      - dash_ucb
+      - dash_ucla
   source:
     protocol: OAI
     oai_base_url: http://uc3-mrtoai-dev.cdlib.org:37001/mrtoai/oai/v2
