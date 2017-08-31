@@ -37,9 +37,6 @@ development:
     oai_base_url: http://uc3-mrtoai-dev.cdlib.org:37001/mrtoai/oai/v2
     metadata_prefix: stash_wrapper
     seconds_granularity: true
-    sets:
-      - dash_ucb
-      - dash_ucla
   db:
     adapter: sqlite3
     database: db/development.sqlite3
@@ -60,6 +57,17 @@ stage:
     oai_base_url: http://uc3-mrtoai-stg.cdlib.org:37001/mrtoai/oai/v2
     metadata_prefix: stash_wrapper
     seconds_granularity: true
+    sets:
+      - dataone_dash
+      - lbnl_dash
+      - ucb_dash
+      - ucd_dash
+      - uci_dash
+      - ucm_dash
+      - ucop_dash
+      - ucr_dash
+      - ucsc_dash
+      - ucsf_datashare_submitter
   db:
     adapter: sqlite3
     database: db/stage.sqlite3
@@ -77,10 +85,10 @@ demo:
     retry_after_limit: 20      # retry wait time in seconds
   source:
     protocol: OAI
-    # TODO: will this work correctly or will we get stage results
     oai_base_url: http://uc3-mrtoai-stg.cdlib.org:37001/mrtoai/oai/v2
     metadata_prefix: stash_wrapper
     seconds_granularity: true
+    set: cdl_dash_demo
   db:
     adapter: sqlite3
     database: db/demo.sqlite3
