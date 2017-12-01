@@ -70,6 +70,7 @@ stage:
       - ucsf_datashare_submitter
       - ucpress_dash
       - ucsb_dash
+      - ocdp_dash
   db:
     adapter: sqlite3
     database: db/stage.sqlite3
