@@ -9,7 +9,7 @@ gem 'whenever', '~> 0.9'
 gem 'nokogiri', '~> 1.7'
 
 # the following line seems to update the code more reliably than the commented out below it
-gem "stash-harvester", :git => "https://github.com/CDLUC3/stash.git", :ref => 'development'
+gem "stash-harvester", :git => "https://github.com/CDLUC3/stash.git", :ref => 'master'
 
 # git 'https://github.com/CDLUC3/stash.git', branch: 'development' do
 #   gem 'stash-harvester'
