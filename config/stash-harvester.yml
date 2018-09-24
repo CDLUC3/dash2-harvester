@@ -71,6 +71,7 @@ stage:
       - ucpress_dash
       - ucsb_dash
       - ocdp_dash
+      - ucsb_dash
   db:
     adapter: sqlite3
     database: db/stage.sqlite3
