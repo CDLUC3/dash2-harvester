@@ -164,6 +164,7 @@ DEPENDENCIES
   capistrano-bundler (~> 1.1.4)
   nokogiri (~> 1.7)
   stash-harvester!
+  stash-wrapper (~> 0.1.12)
   whenever (~> 0.9)
 
 BUNDLED WITH

@@ -11,6 +11,7 @@ gem 'nokogiri', '~> 1.7'
 # the following line seems to update the code more reliably than the commented out below it
 gem "stash-harvester", :git => "https://github.com/CDLUC3/stash.git", :ref => 'master'
 
+gem 'stash-wrapper', '~> 0.1.12'
 # git 'https://github.com/CDLUC3/stash.git', branch: 'development' do
 #   gem 'stash-harvester'
 # end
