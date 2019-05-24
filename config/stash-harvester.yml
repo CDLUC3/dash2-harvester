@@ -114,6 +114,20 @@ production:
     oai_base_url: http://uc3-mrtoai-prd.cdlib.org:37001/mrtoai/oai/v2
     metadata_prefix: stash_wrapper
     seconds_granularity: true
+    sets:
+      - dataone_dash
+      - lbnl_dash
+      - uci_dash
+      - ucb_dash
+      - ucd_lib_dash
+      - ucla_dash
+      - ucm_dash
+      - ucop_dash
+      - ucpress_dash
+      - ucr_lib_dash
+      - ucsb_dash
+      - ucsc_dash
+      - ucsf_datashare_submitter
   db:
     adapter: sqlite3
     database: db/production.sqlite3
