@@ -127,7 +127,7 @@ production:
       - ucr_lib_dash
       - ucsb_dash
       - ucsc_dash
-      - ucsf_datashare_submitter
+      - ucsf_datashare
   db:
     adapter: sqlite3
     database: db/production.sqlite3
